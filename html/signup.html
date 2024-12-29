@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your account</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <form  class="holder" ><h1>Create Shopify account</h1>
+            <label for="username">
+                Username
+                <div class="inputholder"><i class="fa-solid fa-user"></i><input id="username" type="text" class="info" placeholder="Type your username" required id="username"></div>
+            </label>
+            
+            <label for="email">
+                Email
+                <div class="inputholder"><i class="fa-solid fa-at"></i><input id="email" type="email" class="info"  placeholder="Type your email address" required id="email"></div>
+            </label>
+
+            <label for="password">
+                Create Password
+                <div class="inputholder"><i class="fa-solid fa-lock"></i><input type="password" class="info" required placeholder="Type your password" id="password"></div>
+            </label>
+
+            <label for="repassword">
+               Confirm Password
+                <div class="inputholder"><i class="fa-solid fa-lock"></i><input type="password" class="info"  required placeholder="Re-Enter password" id="repassword"></div>
+            </label>
+            <button id="signin" type="submit" >Sign up</button>
+            <h2>already have a account ?
+                <a href="login.html">sign-in</a>
+                
+            </h2>
+        </form>
+    </main>
+    <script src="../js/signup.js"></script>
+</body>
+</html>

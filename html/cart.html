@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Header styles */
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #555;
+    }
+
+    /* Cart container */
+    #cart {
+      width: 80%;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Cart item container */
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+
+    /* Cart item text */
+    .cart-item p {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Cart item buttons */
+    .remove-btn {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+
+    .remove-btn:hover {
+      background-color: #c0392b;
+    }
+
+    /* Cart footer */
+    #total {
+      text-align: right;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    /* Checkout link */
+    .checkout-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 16px;
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .checkout-link:hover {
+      text-decoration: underline;
+    }
+    a{
+      text-align: center;
+      color:#333;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Cart</h1>
+  <div id="cart"></div>
+  <a href="maincontain.html">Add more items now 😉!</a>
+    <script>
+    function getCart() {
+      const cart = localStorage.getItem("cart");
+      return cart ? JSON.parse(cart) : [];
+    }
+
+    function updateCartUI() {
+        const cart = getCart();
+      const cartContainer = document.getElementById("cart");
+      cartContainer.innerHTML = ""; // Clear existing items
+
+      if (cart.length === 0) {
+        cartContainer.innerHTML = "<p>Your cart is empty</p>";
+      } else {
+        cart.forEach(item => {
+          const cartItem = document.createElement("div");
+          cartItem.className = "cart-item";
+          cartItem.innerHTML = `
+            ${item.name} - Quantity: ${item.quantity}
+          `;
+          cartContainer.appendChild(cartItem);
+        });
+      }
+    }
+
+    // Update the cart UI on page load
+    document.addEventListener("DOMContentLoaded", updateCartUI);
+  </script>
+</body>
+</html>

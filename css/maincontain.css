@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: whitesmoke;
+  border-bottom: 3px solid black;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+header .holderbar {
+  height: 8vh;
+  width: 99vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+header .holderbar .hambergur {
+  display: none;
+}
+header .holderbar .hambergur .ham1, header .holderbar .hambergur .ham3 {
+  width: 2.5rem;
+  height: 0.19rem;
+  background-color: gray;
+  margin-bottom: 0.3rem;
+}
+header .holderbar .hambergur .ham2 {
+  width: 1.5rem;
+  height: 0.19rem;
+  background-color: gray;
+  margin-bottom: 0.3rem;
+}
+header .holderbar .cmpny {
+  width: 80%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f63106;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  left: 5rem;
+}
+header .holderbar ul {
+  display: flex;
+  width: 15rem;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+header .holderbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .holderbar ul li a .logo-outer {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .holderbar ul li a .logo-outer i {
+  color: black;
+  font-size: 70%;
+}
+header .toggle {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  margin-left: -10px;
+  padding: 1rem;
+  border-bottom: 3px solid black;
+}
+header .toggle ul {
+  list-style-type: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+header .toggle ul li a {
+  text-decoration: none;
+  color: dodgerblue;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+}
+header .show {
+  display: flex;
+}
+header nav .navlist {
+  width: 99vw;
+  height: 5vh;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+header nav .navlist .roundholder {
+  border: 1.5px solid rgb(88, 88, 88);
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  margin: 5px;
+  background-color: white;
+  font-size: 1rem;
+}
+header nav .navlist .roundholder a {
+  color: black;
+  text-decoration: none;
+}
+header nav .navlist #products {
+  background-color: rgba(75, 194, 51, 0.822);
+  color: white;
+}
+header nav .navlist #products a {
+  color: white;
+  text-decoration: none;
+}
+header nav .navlist .categoriesandproducts, header nav .navlist .quicksearch ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+header nav .navlist #inputbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+  height: 2rem;
+  position: relative;
+  right: 0.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  border: 2px solid rgb(71, 71, 71);
+  padding: 5px;
+  margin: 10px;
+}
+header nav .navlist #inputbox #searchbox {
+  padding: 0.2rem 2rem;
+  border-radius: 1rem;
+  outline: none;
+  color: gray;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+}
+header nav .navlist #inputbox i {
+  color: rgb(71, 71, 71);
+  margin-right: 0.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 16vh;
+  margin-bottom: 2rem;
+  width: 99vw;
+}
+main .categorieswise {
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 35rem;
+  width: 95%;
+  margin-top: 2rem;
+  background: linear-gradient(to right, gray, black, gray);
+}
+main .categorieswise h2 {
+  display: flex;
+  font-weight: 600;
+  height: 20%;
+  font-size: 2rem;
+  border-bottom: 5px double white;
+  text-align: center;
+  width: 100%;
+  background-color: crimson;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+  align-items: center;
+  justify-content: center;
+}
+main .categorieswise .holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+main .categorieswise .holder .infoholder {
+  border: 2px solid white;
+  width: 16rem;
+  border-radius: 0.5rem;
+  margin: 0.2rem;
+  overflow: hidden;
+  margin: 0 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: cadetblue;
+  color: white;
+}
+main .categorieswise .holder .infoholder img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .categorieswise .holder .infoholder button {
+  padding: 0.2rem 1rem;
+  background-color: crimson;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  width: 60%;
+}
+main .categorieswise .holder .infoholder ul {
+  width: 100%;
+  list-style-type: none;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+main .categorieswise .holder .moreoptions {
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 2rem;
+  transform: rotate(225deg);
+}
+main .moreoptions {
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 2rem;
+  transform: rotate(-45deg);
+}
+
+footer {
+  height: 30vh;
+  background-color: whitesmoke;
+  border-top: 3px solid black;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+footer ul li ol {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  list-style-type: none;
+  line-height: 1.5;
+  margin-top: 1rem;
+  color: gray;
+}
+footer ul a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  body main .categorieswise {
+    height: 30rem;
+  }
+  body main .categorieswise .holder .infoholder {
+    width: 185.933px !important;
+  }
+  body main .categorieswise .holder .infoholder button {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 950px) {
+  body main .categorieswise {
+    height: 25rem;
+  }
+  body main .categorieswise .holder .infoholder {
+    margin: 2px;
+    width: 150px !important;
+    height: 20rem;
+  }
+  body main .categorieswise .holder .infoholder img {
+    width: 10rem;
+  }
+  body main .categorieswise .holder .infoholder button {
+    width: 90% !important;
+    font-size: 0.7rem !important;
+  }
+  body main .categorieswise .holder .infoholder ul {
+    line-height: 1;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body main .categorieswise {
+    height: 15rem;
+  }
+  body main .categorieswise h2 {
+    font-size: 1rem;
+  }
+  body main .categorieswise .holder .infoholder {
+    margin: 2px;
+    width: 100px !important;
+    height: 12rem;
+  }
+  body main .categorieswise .holder .infoholder img {
+    width: 100%;
+  }
+  body main .categorieswise .holder .infoholder button {
+    width: 90% !important;
+    font-size: 0.7rem !important;
+  }
+  body main .categorieswise .holder .infoholder ul {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    height: 15vh;
+  }
+  header .holderbar .hambergur {
+    margin-top: 3rem;
+  }
+  header nav .navlist {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  header {
+    height: 15vh;
+  }
+  header .holderbar {
+    justify-content: center;
+  }
+  header .holderbar .cmpny {
+    width: 95%;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-left: -10vh;
+    text-align: center;
+  }
+  header .holderbar .hambergur {
+    display: inline-block;
+    margin-top: 3rem;
+    margin-left: -15vw;
+  }
+  header .holderbar ul {
+    display: none;
+  }
+  header nav .navlist {
+    display: none !important;
+  }
+}/*# sourceMappingURL=maincontain.css.map */

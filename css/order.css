@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: whitesmoke;
+  border-bottom: 3px solid black;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+header .holderbar {
+  height: 8vh;
+  width: 99vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+header .holderbar .hambergur {
+  display: none;
+}
+header .holderbar .hambergur .ham1, header .holderbar .hambergur .ham3 {
+  width: 2.5rem;
+  height: 0.19rem;
+  background-color: gray;
+  margin-bottom: 0.3rem;
+}
+header .holderbar .hambergur .ham2 {
+  width: 1.5rem;
+  height: 0.19rem;
+  background-color: gray;
+  margin-bottom: 0.3rem;
+}
+header .holderbar .cmpny {
+  width: 80%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f63106;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  left: 5rem;
+}
+header .holderbar ul {
+  display: flex;
+  width: 15rem;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+header .holderbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .holderbar ul li a .logo-outer {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .holderbar ul li a .logo-outer i {
+  color: black;
+  font-size: 70%;
+}
+header .toggle {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  margin-left: -10px;
+  padding: 1rem;
+  border-bottom: 3px solid black;
+}
+header .toggle ul {
+  list-style-type: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+}
+header .toggle ul li a {
+  text-decoration: none;
+  color: dodgerblue;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+}
+header .show {
+  display: flex;
+}
+
+main {
+  margin-top: 10vh;
+  background: linear-gradient(45deg, black, transparent), url(../photoes/paymentbanner.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main form {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.097);
+  -webkit-backdrop-filter: blur(0.7rem);
+          backdrop-filter: blur(0.7rem);
+  border-radius: 1rem;
+  width: 30vw;
+  height: 100vh;
+  padding: 2rem 0;
+}
+main form label {
+  width: 80%;
+  text-align: left;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: white;
+}
+main form label input {
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+main form button {
+  padding: 0.5rem 2rem;
+  color: rgba(255, 255, 255, 0.801);
+  background-color: rgb(47, 255, 50);
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+footer {
+  height: 30vh;
+  background-color: whitesmoke;
+  border-top: 3px solid black;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+footer ul li ol {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  list-style-type: none;
+  line-height: 1.5;
+  margin-top: 1rem;
+  color: gray;
+}
+footer ul a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    height: 15vh;
+  }
+  header .holderbar {
+    justify-content: center;
+  }
+  header .holderbar .cmpny {
+    width: 95%;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-left: -10vh;
+    text-align: center;
+  }
+  header .holderbar .hambergur {
+    display: inline-block;
+    margin-top: 3rem;
+    margin-left: -15vw;
+  }
+  header .holderbar ul {
+    display: none;
+  }
+  header nav .navlist {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body main form {
+    width: 25rem !important;
+    height: 50rem !important;
+  }
+  body main form button {
+    max-width: 15rem;
+  }
+}/*# sourceMappingURL=order.css.map */

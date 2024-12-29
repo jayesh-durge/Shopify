@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placing the order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/order.css">
+    <script defer src="../js/toggle.js"></script>
+  </head>
+  <body>
+    <header>
+        <div class="holderbar">
+            <div class="hambergur">
+                <div class="ham1"></div>
+                <div class="ham2"></div>
+                <div class="ham3"></div>
+            </div>
+            <h1 class="cmpny">shopify</h1>
+            <ul>
+                <li><a href="aboutus.html">about</a></li>
+                <li><a href="#">faq's</a></li>
+                <li><a href="cart.html"><div class="logo-outer"><i class="fa-solid fa-cart-shopping"></i></div></a></li>
+                <li><a href="login.html" target="_main"><div class="logo-outer"><i class="fa-regular fa-user"></i></div></a></li>
+            </ul>
+            </div>
+            <div class="toggle">
+                <ul>
+                    <li><a href="login.html" target="_main">login/sign up</a></li>
+                    <li><a href="cart.html">cart</a></li>
+                    <li><a href="categories.html">categories</a></li>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="aboutus.html">about</a></li>
+                </ul>
+        </div>
+    </header>
+    <main>
+        
+    <form id="orderForm">
+        <label for="name">
+            Name
+          <input type="text" placeholder="Enter your name" id="name"required>
+        </label>
+        <label for="contact">
+            contact
+          <input type="text" placeholder="Enter your email or mobile number" id="contact" required>
+        </label>
+        <label for="address">
+            address
+          <input type="text" placeholder=" enter shipping address" id="address"required>
+        </label>
+        <label for="holdername">
+            Name of card holder
+            <input type="text" placeholder="card holder name" id="holdername" required>
+        </label>
+        <label for="cardnumber">
+            card number
+            <input type="number" placeholder="card-number"id="cardnumber" min="0" max="99999999999999999" required>
+        </label>
+        <label for="cvv">
+            CVV
+            <input type="number" placeholder="CVV" id="cvv" min="0" max="999"required>
+          </label>
+        <label for="expiry">
+            expiry date
+            <input type="date" placeholder="expiry date" id="expiry" required>
+        </label>
+        <label for="quantity">
+            number of items
+        <input type="number" placeholder="quantity" id="quantity" min="1" required>
+        </label>
+        <button type="submit">placeorder <i class="fa-solid fa-bag-shopping"></i></button>
+      </form>
+    </main>
+    <footer>
+        <ul>
+            <li>Resources
+            <ol>
+                <li>Find A Store</li>
+                <li>Become A Member</li>
+                <li>Send Us Feedback</li>
+            </ol>
+            </li>
+            <li>Help
+                <ol>
+                    <li>Get Help</li>
+                    <li>Order Status</li>
+                    <li>Delivery</li>
+                    <li>Returns</li>
+                </ol>
+            </li>
+            <li>Company
+                <ol>
+                    <li>About Shopify</li>
+                    <li>Careers</li>
+                    <li>Investors</li>
+                    <li>Sustainability</li>
+                </ol>
+            </li>
+        </ul>
+        <ul>
+        <li>contact us: shopify@gmail.com</li>
+        <li>&copy; 2024 shopify, Inc. All rights reserved</li>
+        <li>terms of use</li>
+        <li><a href="privacypolicy.html">Privacy Policy</a></li>
+        <li><i class="fa-solid fa-globe"></i> india</li>
+    </ul></footer>
+    <script src="../js/order.js"></script>
+  </body>
+</html>

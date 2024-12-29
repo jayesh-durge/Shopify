@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    .holderbar{
+    .hambergur{
+        display: none;
+        .ham1,.ham3{
+            width: 2.5rem;
+            height: 0.19rem;
+            background-color: gray;
+            margin-bottom: 0.3rem;
+        }
+        .ham2{
+            width: 1.5rem;
+            height:0.19rem;
+            background-color: gray;
+            margin-bottom: 0.3rem;
+        }
+    }
+    height: 8vh;
+    width: 99vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding:2rem;
+    .cmpny{
+        width: 90%;
+        text-align: center;
+        font-size: 3rem;
+        color:#f63106;
+        letter-spacing: 1.5px;
+        font-weight: 900;
+        font-family: 'Times New Roman', Times, serif;
+        position: relative;
+        left:3vw;
+        top:3vh;
+    }
+    ul{
+        display: flex;
+        width: 15rem;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        position: relative;
+        top:2.5vh;
+        li{
+            margin:5px;
+            a{
+                text-decoration: none;
+                color:black;
+                .logo-outer{
+                    width: 2.5rem;
+                    height:2.5rem;
+                    border-radius: 100%;
+                    border:1px solid black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    i{
+                        color:black;
+                        font-size: 70%;
+                    }
+                }
+                }
+
+            }
+        }
+    }
+
+    .toggle{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        margin-top: 10px;
+        margin-left: -10px;
+        padding: 1rem;
+        border-bottom:3px solid black;
+
+        ul{
+            list-style-type:none;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            line-height: 1.6;
+            li a{
+                text-decoration: none;
+                color: dodgerblue;
+                text-transform: capitalize;
+                font-size: 1rem;
+                letter-spacing: 1.5px;
+                font-weight: 900;
+            }
+        }
+    }
+    .show{
+        display: flex;
+    }
+    nav .navlist{
+        width: 99vw;
+        height: 5vh;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        .roundholder{
+            border:1.5px solid rgb(88, 88, 88);
+            border-radius: 2rem;
+            padding:0.2rem 1rem;
+            margin:5px;
+            background-color: white;
+            font-size: 1rem;
+            a{
+                color:black;
+                text-decoration: none;
+            }
+        }
+        .categoriesandproducts,.quicksearch ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+        }
+    }
+    background-color:whitesmoke;
+    border-bottom: 3px solid black;
+    padding:0.5rem;
+    position: fixed;
+    top:0;
+    z-index: 99;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    .hero{
+        background-image: linear-gradient(to right,rgba(0, 0, 0, 0.603),rgba(255, 255, 255, 0)),url(../photoes/herobg.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding:3rem;
+        h2{
+            font-size: 4rem;
+            color:white;
+            width: 20%;
+            padding:1.5rem;
+            line-height: 1.4;
+        }
+        #maincontent{
+            padding:1rem 2rem;
+            border-radius: 1rem;
+            background: linear-gradient(45deg,rgba(172, 255, 47, 0.808),rgba(64, 158, 55, 0.808));
+            color:white;
+            font-size: 1.5rem;
+            word-spacing: 1.5px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.63);
+            border:none;
+            a{
+                color:white;
+                text-decoration: none;
+            }
+            i{
+                font-size: 1.3rem;
+            }
+        }
+        #maincontent:hover{
+            background:linear-gradient(-45deg,rgba(172, 255, 47, 0.808),rgba(64, 158, 55, 0.808));
+            transition: 1s ease-in-out;
+        }
+    }
+}
+
+footer{
+    height: 30vh;
+    background-color:whitesmoke;
+    border-top: 3px solid black;
+    ul{
+        li ol{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-around;
+            list-style-type: none;
+            line-height: 1.5;
+            margin-top: 1rem;
+            color: gray;
+        }
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        color: rgb(0, 0, 0);
+        padding:1rem;
+    }
+}
+@media screen and (max-width:800px) {
+    header{
+        .holderbar{
+            .hambergur{
+                margin-top: 3rem;
+            }
+        }
+            nav .navlist{
+                display: none !important;
+            }
+            height: 15vh;
+        }
+}
+@media screen and (max-width:650px) {
+    header{
+        .holderbar{
+            justify-content: space-evenly;
+            .cmpny{
+                width: 90%;
+            }
+            .hambergur{
+                display: inline-block;
+                margin-top: 3rem;
+                margin-left: -10vw;
+            }
+            ul{
+                display: none;
+            }
+        }
+            nav .navlist{
+                display: none !important;
+            }
+            height: 15vh;
+        }
+        main{
+            .hero{
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                h2{
+                    margin:0 !important;
+                    width: 20rem;
+                }
+                #maincontent{
+                    width: 15rem;
+                }
+            }
+        }
+}
