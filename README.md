@@ -18,7 +18,7 @@ Browse by category, filter products, and enjoy a smooth UI experience — all bu
 ## 📸 Screenshots
 
 ### 🖥️ Desktop View:
-![Shopify UI Preview 1](./72de801f-97b1-4fc4-9789-a25b6b6a7e29.png)
+![Shopify UI Preview 1](./Screenshot 2025-06-30 142346.png)
 
 ![Shopify UI Preview 2](./Screenshot%202025-06-30%20142522.png)
 
