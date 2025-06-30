@@ -1,21 +1,29 @@
-# 🛍️ Shopify - E-Commerce Web App
+# 🛒 Shopify – Product Showcase Web App
 
-A fully responsive e-commerce website built using HTML, CSS, and JavaScript.  
-This project simulates a modern online shop with product listings, a shopping cart, and a clean UI.
+A modern and responsive **e-commerce-style product listing page** built using **HTML**, **CSS**, and **JavaScript**.  
+Browse by category, filter products, and enjoy a smooth UI experience — all built from scratch!
 
-## 🚀 Live Preview
+## 🌐 Live Demo
 
-🌐 [Click here to view the live site](https://jayesh-durge.github.io/Shopify/)
+🔗 [View it live](https://jayesh-durge.github.io/Shopify/)
 
-## 💡 Features
+## ✨ Features
 
-- 📦 Product Cards with pricing
-- 🛒 Add to Cart functionality
-- 📱 Responsive Design (Mobile + Desktop)
-- 🎨 Modern and minimal UI/UX
+- 🔍 Product search functionality
+- 📂 Category-based filtering (Mens, Womens, Kids, etc.)
+- 🛒 Interactive "Buy Now" buttons
+- 📱 Fully responsive (desktop + mobile ready)
+- 🎨 Clean layout with neat product cards
 
-## 🛠️ Tech Stack
+## 📸 Screenshots
 
-- HTML5  
-- CSS3  
-- JavaScript (Vanilla)
+### 🖥️ Desktop View:
+![Shopify UI Preview 1](./72de801f-97b1-4fc4-9789-a25b6b6a7e29.png)
+
+![Shopify UI Preview 2](./Screenshot%202025-06-30%20142522.png)
+
+## 🧾 Tech Stack
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla)**
